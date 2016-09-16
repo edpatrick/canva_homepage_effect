@@ -1,0 +1,27 @@
+body {
+  background-color: #3f4652;
+  background-image: url("https://dl.dropboxusercontent.com/content_link/Jrn8vKyNXueWTb2kAYgqyA8SGf9xZtKjbrmmEzTf8Wulazr87fHk5AupgfrK8tnL/file");
+  background-size: cover;    
+  min-height: 100%;
+    
+  margin: 0;
+  border: 0 none #fff;
+  padding: 0;
+  /*Stop body from showing beyond viewport*/
+  overflow:  hidden;    
+}
+
+.container {
+  /*make content fill full viewport*/
+  min-height: 100vh
+}
+
+canvas {
+  /*Give it a border for testing*/
+  border: solid 1px #000;
+  
+  /* make position absolute so overlays on top of content*/
+  position: absolute;
+  left: 0;
+  top: 0;  
+}
