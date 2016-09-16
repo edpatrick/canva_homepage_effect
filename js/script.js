@@ -24,7 +24,7 @@ var x_dist = 0;
 var y_dist = 0;
 
 //img variables
-var dir = 'https://dl.dropboxusercontent.com/content_link/';
+var dir = document.URL.substr(0,document.URL.lastIndexOf('/'));
 
 //initial call to get window size
 resize();
@@ -44,7 +44,7 @@ function drawBall() {
   ctx.arc(ball_x, ball_y, ball_radius, 0, 2*Math.PI);
   ctx.closePath();
   var img = new Image();
-  img.src = dir.concat('ZYZ4cXizwchCQbWG6dxh3wP8xmDC2TBg2CqhFUQVRjLRkTnhIZs8wwWjRgRzlLMx/file');  
+  img.src = dir.concat('/img/bg/bg.jpg');  
   img.onload = function(){
     var pattern = ctx.createPattern(this, "repeat");
     ctx.fillStyle = pattern;
@@ -53,7 +53,7 @@ function drawBall() {
 }
     function clear() {
        var img_blur = new Image();
-       img_blur.src = dir.concat('Jrn8vKyNXueWTb2kAYgqyA8SGf9xZtKjbrmmEzTf8Wulazr87fHk5AupgfrK8tnL/file');  
+       img_blur.src = dir.concat('/img/bg/bg-blur.jpg');   
        img_blur.onload = function(){
          var pattern_blur = ctx.createPattern(this, "repeat");
          ctx.fillStyle = pattern_blur;
