@@ -1,0 +1,17 @@
+body {
+  background-color: #ffffff;
+  background-size: cover;    
+  min-height: 100%;
+    
+  margin: 0;
+  border: 0 none #fff;
+  padding: 0;
+  /*Stop body from showing beyond viewport*/
+  overflow:  hidden;    
+}
+
+
+.container {
+  /*make content fill full viewport*/
+  min-height: 100vh
+}
