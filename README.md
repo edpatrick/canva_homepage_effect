@@ -13,8 +13,11 @@ Modify canvas drawing size based on cursor speed
 
 Draw sharp image on blurred background image using canvas. Modify size of drawing based on cursor speed using script created for stage 2. Image sources: [gratisography.com](http://gratisography.com/) under a [CC0 license](http://gratisography.com/terms.html).
 
+Published: [edpatrick.github.io/canva_homepage_effect/](https://edpatrick.github.io/canva_homepage_effect/)
+
 ## Next stages
 
+- make sharp image co-ordinate exactly with blurred image (fillRect vs clearRect issue)
 - make animation smoother (with lerp?)
 - improve performance - make sure images caching etc.
 - make animation cooler! e.g. fade effects used on canva.com
