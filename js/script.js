@@ -1,4 +1,5 @@
 var canvas = document.getElementById('canvas');
+if (canvas.getContext) {
 var ctx = canvas.getContext('2d');
 var width = window.innerWidth;
 var height = window.innerHeight;
@@ -104,3 +105,4 @@ function resize() {
 
 window.addEventListener('resize', resize);
 window.addEventListener('mousemove', mousemove);
+}
