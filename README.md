@@ -5,8 +5,11 @@ An attempt to create a similar effect to that generated on the canva.com homepag
 
 Script to track cursor speed. Show this in live counter on screen.
 
+## Stage 2: modify_size_on_cursor_speed/
+
+Modify canvas drawing size based on cursor speed
+
 ## Next stages
 
-- create canvas drawing and modify size based on cursor speed
 - create canvas in which sharp image is drawn on blurred background image
 - merge scripts together so that sharp image size changes on cursor speed
