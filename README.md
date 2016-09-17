@@ -5,9 +5,13 @@ An attempt to create a similar effect to that generated on the [canva.com homepa
 
 Script to track cursor speed. Show this in live counter on screen.
 
+Published: [edpatrick.github.io/canva_homepage_effect/cursor_speed/](https://edpatrick.github.io/canva_homepage_effect/cursor_speed/)
+
 ## Stage 2: modify_size_on_cursor_speed/
 
 Modify canvas drawing size based on cursor speed
+
+Published [edpatrick.github.io/canva_homepage_effect/modify_size_on_cursor_speed/](https://edpatrick.github.io/canva_homepage_effect/modify_size_on_cursor_speed/)
 
 ## Stage 3: core functionality
 
