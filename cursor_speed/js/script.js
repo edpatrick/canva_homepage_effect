@@ -28,7 +28,7 @@
             velocity = Math.sqrt(x_dist * x_dist + y_dist * y_dist) / time;
 
             //output speed 
-            document.getElementById("content").textContent = "Speed: " + velocity + " pixels per " + time + " milliseconds";
+            document.getElementById("content").textContent = "Speed: " + velocity + " pixels per millisecond";
 
         }
 
