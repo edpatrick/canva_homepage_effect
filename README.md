@@ -21,6 +21,9 @@ Published: [edpatrick.github.io/canva_homepage_effect/](https://edpatrick.github
 
 ## Next stages
 
+- clear new drawing rather than blurred old one - after time period
+	- clear full circular shape http://stackoverflow.com/questions/10396991/clearing-circular-regions-from-html5-canvas
+	- fade out http://stackoverflow.com/questions/19258169/fadein-fadeout-in-html5-canvas
 - make sharp image co-ordinate exactly with blurred image (fillRect vs clearRect issue)
 - make animation smoother (with lerp?)
 - improve performance - make sure images caching etc.

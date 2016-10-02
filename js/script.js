@@ -18,7 +18,7 @@ var ball_y = y;
 //speed measures
 var last_mouse_x = -1;
 var last_mouse_y = -1;
-var time = 200;
+var time = 600;
 var speed = 0;
 var x_dist = 0;
 var y_dist = 0;
@@ -49,22 +49,31 @@ function drawBall() {
     var pattern = ctx.createPattern(this, "repeat");
     ctx.fillStyle = pattern;
     ctx.fill();
+    clear(ctx, x, y, ball_radius);
   }
 }
-    function clear() {
-       var img_blur = new Image();
-       img_blur.src = dir.concat('/img/bg/bg-blur.jpg');   
-       img_blur.onload = function(){
-         var pattern_blur = ctx.createPattern(this, "repeat");
-         ctx.fillStyle = pattern_blur;
-         ctx.clearRect(0,0,width,height);
-       }      
 
-    } 
+function clear(ctx, x, y, ball_radius) {
+  setTimeout(function(){ this.ctx.clearRect(x, y,ball_radius,ball_radius); }, 6000);
+
+}
+
+
+/*
+function clear() {
+  var img_blur = new Image();
+  img_blur.src = dir.concat('/img/bg/bg-blur.jpg');   
+  img_blur.onload = function(){
+    var pattern_blur = ctx.createPattern(this, "repeat");
+    ctx.fillStyle = pattern_blur;
     
+        setTimeout(function(){ ctx.clearRect(0,0,400,400); }, 10000);
+  }      
+} 
+*/    
 //animation loop
 function animate() {
-  clear();
+  //clear();
   drawBall();
   requestAnimationFrame(animate);
 }
@@ -93,7 +102,9 @@ function mousemove(e) {
       }
     }
 
-    animate();
+    //animate();
+
+        setTimeout(function(){ animate(); }, 10000);
   }        
 }
 
