@@ -1,7 +1,6 @@
 body {
   background-color: #3f4652;
-  background-image: url("../img/bg/bg-blur.jpg");
-  background-size: cover;    
+  background-image: url("../img/bg/bg-blur.jpg"); 
   min-height: 100%;
     
   margin: 0;

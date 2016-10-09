@@ -1,3 +1,20 @@
+class ball {
+  constructor(ctx, ball_x) {
+    
+  }
+
+  createBall () {
+    ctx.beginPath();
+    // ball position changes to mouse position in increments for smoothness of animation
+    ball_x += (x - ball_x)*0.1;
+    ball_y += (y - ball_y)*0.1;
+    ctx.beginPath();
+    ctx.arc(ball_x, ball_y, ball_radius, 0, 2*Math.PI);
+    ctx.closePath();
+  }
+}
+
+
 var canvas = document.getElementById('canvas');
 if (canvas.getContext) {
 var ctx = canvas.getContext('2d');
@@ -10,10 +27,10 @@ var ball_radius_max = 40;
 var ball_radius = ball_radius_max;
 
 //start drawing off screen
-var x = window.innerWidth/2;
-var y = window.innerHeight/2;
-var ball_x = x;
-var ball_y = y;
+var x;
+var y;
+var ball_x;
+var ball_y;
 
 //speed measures
 var last_mouse_x = -1;
@@ -83,6 +100,8 @@ animate();
 function mousemove(e) {
   x = e.pageX;
   y = e.pageY;
+  ball_x = x;
+  ball_y = y;
   //if prev cursor move recorded
   if (last_mouse_x > -1) {
     
